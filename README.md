@@ -1,23 +1,38 @@
-A timer app for iOS 26 powered by the new liquid glass.
+# Just In Time
 
-<img width="585" height="1266" alt="image" src="https://github.com/user-attachments/assets/18de5eb9-eb3d-44fd-9143-7b867853ee50" />
+## A timer app for iOS 26 powered by the new liquid glass.
 
-<img width="585" height="1266" alt="image" src="https://github.com/user-attachments/assets/2b8da845-773b-4531-aaa4-c553401e8d09" />
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/18de5eb9-eb3d-44fd-9143-7b867853ee50" />
 
-<img width="585" height="1266" alt="image" src="https://github.com/user-attachments/assets/5ad7f652-7c33-453e-b246-a61de9fe0642" />
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/2b8da845-773b-4531-aaa4-c553401e8d09" />
+
+<img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/5ad7f652-7c33-453e-b246-a61de9fe0642" />
 
 
-Feature :
-- you can setup multiple timer
-- slik liquid glass design
-- alarm
-- timer
-- stopwatch
+## Feature :
+- Multiple timer setup 
+- Elegant Liquid Glass design
+- Alarm
+- Timer
+- Stopwatch
 
-It's only a little project that i do when I have time so don't expect frequent update.
-If you have some idea of feature or if you have some bugs / issue tell me.
+## Note:
+This is just a small project I'm working on in my spare time, so don't expect frequent updates.
+If you have any feature ideas or encounter any bugs/issues, please let me know.
 
-Installation :
+## Requirement : 
+<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/9c6e3bfb-19c6-4c9d-ad55-ae769968d4e8" />
+ 
+ 
+ - MacOS 26 Tahoe on Apple Silicon or newer
+   
+ - iOS 26 or newer
+   
+ - iPadOS 26 or newer
+
+ - [SideStore](https://sidestore.io) / [AltStore](https://altstore.io) / [LiveContainer](https://github.com/LiveContainer/LiveContainer)
+
+## Installation :
 - you need to use alstore / sidestore or if you have livecontainer you can use it
 - the mac version only work on apple silicon macs since it work trought the compatibility layer of macos for ipadOS/iOS app
   and its not signed so I dont even know if it's gon a work on your mac
