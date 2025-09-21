@@ -1,32 +1,23 @@
-//
-//  Just_In_TimeApp.swift
-//  Just In Time
-//
-//  Created by Antoine LEPRETRE on 21/09/2025.
-//
-
+// LiquidGlassClockApp.swift
 import SwiftUI
-import SwiftData
 
 @main
-struct Just_In_TimeApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+struct LiquidGlassClockApp: App {
+    @StateObject private var alarmsVM = AlarmsViewModel()
+    @StateObject private var timerVM = TimerViewModel()
+    @StateObject private var stopwatchVM = StopwatchViewModel()
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    init() {
+        NotificationService.shared.requestAuthorization()
+    }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(alarmsVM)
+                .environmentObject(timerVM)
+                .environmentObject(stopwatchVM)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
+
