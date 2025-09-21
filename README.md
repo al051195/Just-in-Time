@@ -33,8 +33,7 @@ If you have any feature ideas or encounter any bugs/issues, please let me know.
  - [SideStore](https://sidestore.io) / [AltStore](https://altstore.io) / [LiveContainer](https://github.com/LiveContainer/LiveContainer)
 
 ## Installation :
-- you need to use alstore / sidestore or if you have livecontainer you can use it
-- the mac version only work on apple silicon macs since it work trought the compatibility layer of macos for ipadOS/iOS app
-  and its not signed so I dont even know if it's gon a work on your mac
-- for ipadOS : I use my iPhone for testing so if some thing are not looking great ob ipad tell me
-  but normaly its gonna work the same way as iOS ( you need to sideload it or use livecontainer )
+- You must use Alstore/SideStore, or if you have LiveContainer, you can use it.
+- The Mac version only works on Apple Silicon Macs, as it works with the macOS compatibility layer for iPadOS/iOS. It's unsigned, so I don't even know if it will work on your Mac.
+- For iPadOS: I'm using my iPhone for testing. If anything doesn't work on iPad, please let me know.
+But it should work just like on iOS (you'll need to sideload it or use LiveContainer).
