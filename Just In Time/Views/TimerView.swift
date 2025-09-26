@@ -5,8 +5,12 @@ struct TimerView: View {
     @EnvironmentObject var timerVM: TimerViewModel
     @Environment(\.colorScheme) var colorScheme
     
+    @State private var isStartPressed = false
+    @State private var isResetPressed = false
+    
     var body: some View {
         VStack(spacing: 24) {
+            // Circle Progress
             ZStack {
                 Circle()
                     .stroke(lineWidth: 18)
@@ -27,18 +31,29 @@ struct TimerView: View {
             }
             .frame(width: 240, height: 240)
             
+            // Slider for duration
             VStack(spacing: 12) {
-                Text("Durée par timer : \(timerVM.formatTime(timerVM.totalTime))")
+                Text("Timer duration : \(timerVM.formatTime(timerVM.totalTime))")
                     .foregroundColor(.primary)
-                Slider(value: $timerVM.totalTime, in: timerVM.sliderStep...1800)
+                
+                Slider(value: $timerVM.totalTime, in: timerVM.sliderStep...1800, step: timerVM.sliderStep)
                     .tint(.blue)
                     .disabled(timerVM.timerState == .running)
+                    .onChange(of: timerVM.totalTime) { newValue in
+                        // Reset remaining time when changing duration
+                        if timerVM.timerState == .stopped {
+                            timerVM.remainingTime = newValue
+                        }
+                    }
             }
             .padding(.horizontal)
             
+            // Picker for repetitions
             VStack(spacing: 10) {
-                Picker("Nombre de timers", selection: $timerVM.numberOfTimers) {
-                    ForEach(1..<6) { i in Text("\(i)").tag(i) }
+                Picker("Number of timers :", selection: $timerVM.numberOfTimers) {
+                    ForEach(1..<6) { i in
+                        Text("\(i)").tag(i)
+                    }
                 }
                 .pickerStyle(.segmented)
                 .tint(.blue)
@@ -46,19 +61,29 @@ struct TimerView: View {
             }
             .padding(.horizontal)
             
+            // Control buttons
             HStack(spacing: 16) {
                 Button(action: {
-                    haptic(.heavy)
-                    if timerVM.timerState == .running { timerVM.stop() } else { timerVM.start() }
+                    haptic(.medium)
+                    withAnimation(.spring(response: 0.2, dampingFraction: 0.5)) { isStartPressed = true }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) { isStartPressed = false }
+                    }
+                    timerVM.timerState == .running ? timerVM.stop() : timerVM.start()
                 }) {
                     Text(timerVM.timerState == .running ? "Pause" : "Start")
                         .frame(width: 120, height: 44)
                 }
                 .buttonStyle(.glassProminent)
                 .tint(timerVM.timerState == .running ? .orange : .blue)
+                .scaleEffect(isStartPressed ? 0.92 : 1.0)
                 
                 Button(action: {
                     haptic(.medium)
+                    withAnimation(.spring(response: 0.2, dampingFraction: 0.5)) { isResetPressed = true }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) { isResetPressed = false }
+                    }
                     timerVM.reset()
                 }) {
                     Text("Reset")
@@ -68,6 +93,7 @@ struct TimerView: View {
                 .tint(.red)
                 .disabled(timerVM.timerState == .stopped && timerVM.remainingTime == timerVM.totalTime && timerVM.currentRepetition == 0)
                 .opacity(timerVM.timerState == .stopped && timerVM.remainingTime == timerVM.totalTime && timerVM.currentRepetition == 0 ? 0.5 : 1)
+                .scaleEffect(isResetPressed ? 0.92 : 1.0)
             }
             .padding(.top, 8)
         }
@@ -83,3 +109,4 @@ struct TimerView: View {
 #Preview {
     TimerView().environmentObject(TimerViewModel())
 }
+

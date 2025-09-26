@@ -33,6 +33,7 @@ struct AlarmsView: View {
                     Button {
                         selectedAlarm = nil
                         isEditing = true
+
                     } label: {
                         Image(systemName: "plus")
                     }

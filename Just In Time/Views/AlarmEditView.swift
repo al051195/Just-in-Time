@@ -27,7 +27,7 @@ struct AlarmEditView: View {
                 .padding(.horizontal)
             
             Toggle("Activer l’alarme", isOn: $isEnabled)
-                .toggleStyle(SwitchToggleStyle(tint: .green))
+                .toggleStyle(SwitchToggleStyle(tint: .blue))
                 .padding(.horizontal)
             
             Spacer()
@@ -35,7 +35,8 @@ struct AlarmEditView: View {
             HStack(spacing: 16) {
                 Button("Annuler") { dismiss() }
                     .frame(maxWidth: .infinity, minHeight: 55)
-                    .buttonStyle(.bordered)
+                    .buttonStyle(.glassProminent)
+                    .tint(.red)
                 
                 Button(alarmToEdit == nil ? "Ajouter" : "Mettre à jour") {
                     let newAlarm = Alarm(id: alarmToEdit?.id ?? UUID(), time: selectedTime, enabled: isEnabled)
@@ -43,13 +44,11 @@ struct AlarmEditView: View {
                     dismiss()
                 }
                 .frame(maxWidth: .infinity, minHeight: 55)
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(.glassProminent)
             }
             .padding(.horizontal)
         }
         .padding()
         .background(.ultraThinMaterial)
-        .cornerRadius(20)
-        .padding()
-    }
+        .cornerRadius(40)}
 }

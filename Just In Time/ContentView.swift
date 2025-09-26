@@ -3,6 +3,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            AlarmsView()
+                .tabItem {
+                    Label("Alarms", systemImage: "alarm")
+                }
+            
             TimerView()
                 .tabItem {
                     Label("Timer", systemImage: "timer")
@@ -12,15 +17,13 @@ struct ContentView: View {
                 .tabItem {
                     Label("Stopwatch", systemImage: "stopwatch")
                 }
-            
-            AlarmsView()
-                .tabItem {
-                    Label("Alarms", systemImage: "alarm")
-                }
         }
         .tint(.blue)
     }
 }
 #Preview {
     ContentView()
+        .environmentObject(StopwatchViewModel())
+        .environmentObject(AlarmsViewModel())
+        .environmentObject(TimerViewModel())
 }
