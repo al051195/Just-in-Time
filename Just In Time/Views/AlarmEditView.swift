@@ -50,5 +50,5 @@ struct AlarmEditView: View {
         }
         .padding()
         .background(.ultraThinMaterial)
-        .cornerRadius(20)}
+        .cornerRadius(40)}
 }
