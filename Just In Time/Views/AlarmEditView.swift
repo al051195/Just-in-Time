@@ -16,7 +16,7 @@ struct AlarmEditView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            Text(alarmToEdit == nil ? "Nouvelle alarme" : "Modifier l’alarme")
+            Text(alarmToEdit == nil ? "New alarm" : "Change the alarm")
                 .font(.title2)
                 .bold()
                 .padding(.top)
@@ -26,19 +26,19 @@ struct AlarmEditView: View {
                 .labelsHidden()
                 .padding(.horizontal)
             
-            Toggle("Activer l’alarme", isOn: $isEnabled)
+            Toggle("Activate the alarm", isOn: $isEnabled)
                 .toggleStyle(SwitchToggleStyle(tint: .blue))
                 .padding(.horizontal)
             
             Spacer()
             
             HStack(spacing: 16) {
-                Button("Annuler") { dismiss() }
+                Button("Cancel") { dismiss() }
                     .frame(maxWidth: .infinity, minHeight: 55)
                     .buttonStyle(.glassProminent)
-                    .tint(.red)
+                    .tint(.red .opacity(0.75))
                 
-                Button(alarmToEdit == nil ? "Ajouter" : "Mettre à jour") {
+                Button(alarmToEdit == nil ? "Add" : "Update") {
                     let newAlarm = Alarm(id: alarmToEdit?.id ?? UUID(), time: selectedTime, enabled: isEnabled)
                     if alarmToEdit != nil { viewModel.update(newAlarm) } else { viewModel.add(newAlarm) }
                     dismiss()
@@ -50,5 +50,5 @@ struct AlarmEditView: View {
         }
         .padding()
         .background(.ultraThinMaterial)
-        .cornerRadius(40)}
+        .cornerRadius(20)}
 }

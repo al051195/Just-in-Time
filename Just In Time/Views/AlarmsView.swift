@@ -27,7 +27,7 @@ struct AlarmsView: View {
                 }
                 .onDelete(perform: alarmsVM.delete)
             }
-            .navigationTitle("Alarmes")
+            .navigationTitle("Alarms")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

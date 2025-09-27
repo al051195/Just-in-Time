@@ -11,9 +11,9 @@ struct JustInTimeApp: App {
         // Demande d'autorisation pour les notifications
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if let error = error {
-                print("Erreur lors de la demande d'autorisation des notifications : \(error.localizedDescription)")
+                print("Error requesting permission for notifications :\(error.localizedDescription)")
             } else {
-                print("Autorisation notifications : \(granted ? "accordée" : "refusée")")
+                print("Notification authorization : \(granted ? "Granted" : "Refused")")
             }
         }
     }

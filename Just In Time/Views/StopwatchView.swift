@@ -34,7 +34,7 @@ struct StopwatchView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) { isStartPressed = false } }
                     stopwatchVM.isRunning ? stopwatchVM.stop() : stopwatchVM.start()
                 }) {
-                    Text(stopwatchVM.isRunning ? "Pause" : "Start")
+                    Text(stopwatchVM.isRunning ? "Stop" : "Start")
                         .frame(width: 120, height: 44)
                 }
                 .buttonStyle(.glassProminent)
