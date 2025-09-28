@@ -15,7 +15,7 @@
 - Alarm
 - Timer
 - Stopwatch
-- Live Activities ( in a future update ). 
+- Live Activities ( in a future update )
 
 ## Note :
 This is just a little project I’m working on in my free time, so I won’t be posting updates too often.
