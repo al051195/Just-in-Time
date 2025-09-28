@@ -15,10 +15,11 @@
 - Alarm
 - Timer
 - Stopwatch
+- Live Activities ( in a future update ). 
 
-## Note:
-This is just a small project I'm working on in my spare time, so don't expect frequent updates.
-If you have any feature ideas or encounter any bugs / issues, please let me know.
+## Note :
+This is just a little project I’m working on in my free time, so I won’t be posting updates too often.
+If you have any cool feature ideas or find any bugs, please let me know!
 
 ## Requirement : 
 <img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/9c6e3bfb-19c6-4c9d-ad55-ae769968d4e8" />
