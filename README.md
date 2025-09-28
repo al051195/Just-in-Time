@@ -2,11 +2,11 @@
 
 ## A timer app for iOS 26 powered by the new liquid glass.
 
-<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/18de5eb9-eb3d-44fd-9143-7b867853ee50" />
+<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/eba39989-aab9-42c9-90a0-c77e84eb3c6e" />
 
-<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/2b8da845-773b-4531-aaa4-c553401e8d09" />
+<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/39c7966d-2668-4b56-a22a-b1d02813278b" />
 
-<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/5ad7f652-7c33-453e-b246-a61de9fe0642" />
+<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/76c65d14-f81e-406a-b8de-8763a0b9d0c9" />
 
 
 ## Feature :
