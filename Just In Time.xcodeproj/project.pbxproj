@@ -7,32 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		98766D382E86C5B70040069F /* Just In Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just In Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7176C50E2ED8E3AF00DDC1FE /* Just In Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just In Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		98766D7E2E86C8ED0040069F /* Exceptions for "Just In Time" folder in "Just In Time" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 98766D372E86C5B70040069F /* Just In Time */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		98766D3A2E86C5B70040069F /* Just In Time */ = {
+		7176C5102ED8E3AF00DDC1FE /* Just In Time */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				98766D7E2E86C8ED0040069F /* Exceptions for "Just In Time" folder in "Just In Time" target */,
-			);
 			path = "Just In Time";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		98766D352E86C5B70040069F /* Frameworks */ = {
+		7176C50B2ED8E3AF00DDC1FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		98766D2F2E86C5B70040069F = {
+		7176C5052ED8E3AF00DDC1FE = {
 			isa = PBXGroup;
 			children = (
-				98766D3A2E86C5B70040069F /* Just In Time */,
-				98766D392E86C5B70040069F /* Products */,
+				7176C5102ED8E3AF00DDC1FE /* Just In Time */,
+				7176C50F2ED8E3AF00DDC1FE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		98766D392E86C5B70040069F /* Products */ = {
+		7176C50F2ED8E3AF00DDC1FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98766D382E86C5B70040069F /* Just In Time.app */,
+				7176C50E2ED8E3AF00DDC1FE /* Just In Time.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98766D372E86C5B70040069F /* Just In Time */ = {
+		7176C50D2ED8E3AF00DDC1FE /* Just In Time */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98766D452E86C5B90040069F /* Build configuration list for PBXNativeTarget "Just In Time" */;
+			buildConfigurationList = 7176C5192ED8E3B100DDC1FE /* Build configuration list for PBXNativeTarget "Just In Time" */;
 			buildPhases = (
-				98766D342E86C5B70040069F /* Sources */,
-				98766D352E86C5B70040069F /* Frameworks */,
-				98766D362E86C5B70040069F /* Resources */,
+				7176C50A2ED8E3AF00DDC1FE /* Sources */,
+				7176C50B2ED8E3AF00DDC1FE /* Frameworks */,
+				7176C50C2ED8E3AF00DDC1FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				98766D3A2E86C5B70040069F /* Just In Time */,
+				7176C5102ED8E3AF00DDC1FE /* Just In Time */,
 			);
 			name = "Just In Time";
 			packageProductDependencies = (
 			);
 			productName = "Just In Time";
-			productReference = 98766D382E86C5B70040069F /* Just In Time.app */;
+			productReference = 7176C50E2ED8E3AF00DDC1FE /* Just In Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		98766D302E86C5B70040069F /* Project object */ = {
+		7176C5062ED8E3AF00DDC1FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					98766D372E86C5B70040069F = {
-						CreatedOnToolsVersion = 26.0;
+					7176C50D2ED8E3AF00DDC1FE = {
+						CreatedOnToolsVersion = 26.1;
 					};
 				};
 			};
-			buildConfigurationList = 98766D332E86C5B70040069F /* Build configuration list for PBXProject "Just In Time" */;
+			buildConfigurationList = 7176C5092ED8E3AF00DDC1FE /* Build configuration list for PBXProject "Just In Time" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 98766D2F2E86C5B70040069F;
+			mainGroup = 7176C5052ED8E3AF00DDC1FE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 98766D392E86C5B70040069F /* Products */;
+			productRefGroup = 7176C50F2ED8E3AF00DDC1FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98766D372E86C5B70040069F /* Just In Time */,
+				7176C50D2ED8E3AF00DDC1FE /* Just In Time */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		98766D362E86C5B70040069F /* Resources */ = {
+		7176C50C2ED8E3AF00DDC1FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98766D342E86C5B70040069F /* Sources */ = {
+		7176C50A2ED8E3AF00DDC1FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		98766D432E86C5B90040069F /* Debug */ = {
+		7176C5172ED8E3B100DDC1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +178,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -202,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		98766D442E86C5B90040069F /* Release */ = {
+		7176C5182ED8E3B100DDC1FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -259,28 +246,30 @@
 			};
 			name = Release;
 		};
-		98766D462E86C5B90040069F /* Debug */ = {
+		7176C51A2ED8E3B100DDC1FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = SB3859T737;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Just-In-Time-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Just In Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "Al051195.Just-In-Time";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Al051195.Just-In-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -292,28 +281,30 @@
 			};
 			name = Debug;
 		};
-		98766D472E86C5B90040069F /* Release */ = {
+		7176C51B2ED8E3B100DDC1FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = SB3859T737;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Just-In-Time-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Just In Time";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "Al051195.Just-In-Time";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Al051195.Just-In-Time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -328,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98766D332E86C5B70040069F /* Build configuration list for PBXProject "Just In Time" */ = {
+		7176C5092ED8E3AF00DDC1FE /* Build configuration list for PBXProject "Just In Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98766D432E86C5B90040069F /* Debug */,
-				98766D442E86C5B90040069F /* Release */,
+				7176C5172ED8E3B100DDC1FE /* Debug */,
+				7176C5182ED8E3B100DDC1FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98766D452E86C5B90040069F /* Build configuration list for PBXNativeTarget "Just In Time" */ = {
+		7176C5192ED8E3B100DDC1FE /* Build configuration list for PBXNativeTarget "Just In Time" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98766D462E86C5B90040069F /* Debug */,
-				98766D472E86C5B90040069F /* Release */,
+				7176C51A2ED8E3B100DDC1FE /* Debug */,
+				7176C51B2ED8E3B100DDC1FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 98766D302E86C5B70040069F /* Project object */;
+	rootObject = 7176C5062ED8E3AF00DDC1FE /* Project object */;
 }
