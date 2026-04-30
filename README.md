@@ -2,14 +2,13 @@
 
 ## A timer app for iOS 26 powered by the new liquid glass.
 
-<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/eba39989-aab9-42c9-90a0-c77e84eb3c6e" />
+<p>
+   <img src="https://raw.githubusercontent.com/al051195/Just-in-Time/refs/heads/main/Screenshots/iphone1.png" height="600">
+	<img src="https://raw.githubusercontent.com/al051195/Just-in-Time/refs/heads/main/Screenshots/iphone2.png" height="600">
+	<img src="https://raw.githubusercontent.com/al051195/Just-in-Time/refs/heads/main/Screenshots/iphone3.png" height="600">
+</p>
 
-<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/39c7966d-2668-4b56-a22a-b1d02813278b" />
-
-<img width="186" height="400" alt="image" src="https://github.com/user-attachments/assets/76c65d14-f81e-406a-b8de-8763a0b9d0c9" />
-
-
-## Feature :
+## Features :
 - Multiple timer setup 
 - Elegant Liquid Glass design
 - Alarm
@@ -22,7 +21,7 @@ This is just a little project I’m working on in my free time, so I won’t be 
 If you have any cool feature ideas or find any bugs, please let me know!
 
 ## Requirement : 
-<img width="128" height="128" alt="image" src="https://github.com/user-attachments/assets/9c6e3bfb-19c6-4c9d-ad55-ae769968d4e8" />
+<img width="128" height="128" alt="image" src="https://raw.githubusercontent.com/al051195/Just-in-Time/refs/heads/main/Screenshots/OS26_logo.png" />
  
  
  - MacOS 26 Tahoe on Apple Silicon or newer
